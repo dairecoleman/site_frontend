@@ -9,6 +9,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   const forms = document.querySelectorAll('#contact form');
 
+  const apiEndpoint = "https://4xmknjg6w2.execute-api.us-east-1.amazonaws.com/prod/contact"
+
   forms.forEach(function(form) {
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
@@ -20,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       };
 
       try {
-        const response = await fetch(form.action, {
+        const response = await fetch(apiEndpoint, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
