@@ -1,0 +1,12 @@
+name: testing actions
+
+on: workflow_dispatch
+
+jobs:
+  test-gh-actions:
+    runs-on: ubuntu-latest
+    name: Checkout
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
