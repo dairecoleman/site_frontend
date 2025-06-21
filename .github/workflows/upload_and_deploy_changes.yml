@@ -34,5 +34,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-2
         run: |
-          aws s3 sync --dryrun . s3://mycrcawsstaticwebsite01/site_frontend/ --exclude ".git/*"
+          aws s3 sync . s3://mycrcawsstaticwebsite01/site_frontend/ --exclude ".git/*"
           aws amplify start-deployment --app-id driozi76gdq9x --branch-name staging --source-url s3://mycrcawsstaticwebsite01/site_frontend/ --source-url-type BUCKET_PREFIX
