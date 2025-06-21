@@ -2,7 +2,7 @@
 
 This code is for my personal static website I host on AWS. You can visit it at [https://www.dairecoleman.ca/](url)
 
-This project is part of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/), a 16-step hands-on initiative designed to bridge the gap from cloud certification to a real-world cloud/devops role. 
+This project is inspired by the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/), a 16-step hands-on initiative designed to bridge the gap from cloud certification to a real-world cloud/devops role. I chose it as the primary project to introduce myself to public cloud and experiment with any and all skills and tasks used in cloud development.
 
 I've gone a bit further — this site also serves as my personal portfolio, showcasing my **resume**, **projects**, and **passions** (like coding, game development, fitness & toast 🍞).
 
