@@ -14,6 +14,10 @@ jobs:
           ref: testing_continuous_deployment
           fetch-depth: 0
 
+      # Fix timestamps for aws sync to detect the correct changes
+      - name: restore timestamps
+        uses: chetan/git-restore-mtime-action@v2
+
       #- name: Configure AWS credentials
       #  uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
       #  with:
